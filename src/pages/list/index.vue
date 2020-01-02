@@ -1,5 +1,9 @@
 <template>
   <div>
+      <i-card v-for="item in list" :key="item" i-class="split" :title="item.name" thumb="item.jpg">
+          <view slot="content">{{item.singer}}</view>
+          <view slot="footer">{{item.time}}</view>
+      </i-card>
   </div>
 </template>
 
@@ -24,4 +28,7 @@ export default {
 </script>
 
 <style scoped>
+div >>> .split{
+    margin-bottom:10pt;
+}
 </style>

@@ -1,11 +1,23 @@
 <template>
   <div>
+      <swiper
+      :indicator-dots="indicatorDots"
+      :autoplay="autoplay"
+      :interval="interval"
+      :duration="duration"
+      style="height:200px">
+    <block v-for="item in imgUrls" :key="item">            
+      <swiper-item>
+        <image :src="item" style="width:100%;"/>
+      </swiper-item>
+    </block>
+  </swiper>
     <i-grid i-class="no-border">
-        <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
+        <i-grid-item @click="goList(item.url)" i-class="no-border" v-for="item in grids" :key="item">
             <i-grid-icon>
-             <image :src="grid.image" />
+             <image :src="item.image" />
          </i-grid-icon>
-         <i-grid-label>{{grid.title}}</i-grid-label>
+         <i-grid-label>{{item.type}}</i-grid-label>
         </i-grid-item>
         <i-grid-item i-class="no-border">
             <i-grid-icon>
@@ -41,7 +53,16 @@ export default {
             {name:"歌名2",singer:"歌手2",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",time:"时长2"},
             {name:"歌名3",singer:"歌手3",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",time:"时长3"},
             {name:"歌名4",singer:"歌手4",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",time:"时长4"}
-        ]
+        ],
+        imgUrls: [
+        'http://www.canyin88.com/uploads/image/2019/04/16/1555378220872933.jpg',
+        'http://www.canyin88.com/uploads/image/2019/04/15/1555321255843942.jpg',
+        'http://www.canyin88.com/uploads/190415/99ad8154e7332ca96ccb323580b3b8a2_3.jpg'
+      ],
+      indicatorDots: true,
+      autoplay: true,
+      interval: 5000,
+      duration: 1000       
     }
   },
 
@@ -54,6 +75,7 @@ export default {
   },
 
   created () {
+      //let app =getApp()
   }
 }
 </script>
