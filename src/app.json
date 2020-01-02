@@ -3,7 +3,7 @@
     "pages/index/main",
     "pages/mine/main",
     "pages/list/main",
-    "pages/download/main"
+    "pages/recommend/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,10 +23,10 @@
       "iconPath": "static/images/_music.png",
       "selectedIconPath": "static/images/music.png"
     }, {
-      "text": "下载",
-      "pagePath": "pages/download/main",
-      "iconPath": "static/images/_download.png",
-      "selectedIconPath": "static/images/download.png"
+      "text": "推荐",
+      "pagePath": "pages/recommend/main",
+      "iconPath": "static/images/_search.png",
+      "selectedIconPath": "static/images/search.png"
     }, {
       "text": "我的",
       "pagePath": "pages/mine/main",

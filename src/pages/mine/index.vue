@@ -8,8 +8,9 @@
     </view>
     <i-panel title="来创建属于自己的歌单吧">
       <i-input :value="name" @change="changeName($event)" title="歌单名称" autofocus placeholder="请输入名称" maxlength="20" />
+      <i-input :value="name" @change="changeName($event)" title="简介" autofocus placeholder="请输入简介" maxlength="20" />
     </i-panel>
-    <i-button @click="handleClick" type="warning" size="default">我要添加</i-button>
+    <i-button @click="handleClick" type="warning" size="default">添加歌单</i-button>
     <view class="tips">每个人都应该有一个属于自己的歌单</view>
   </div>
 </template>
