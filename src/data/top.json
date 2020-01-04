@@ -1,6 +1,5 @@
 [
-    {"id":1,"name":"静虑","singer":"戴亚","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"水月空禅心"},
-    {"id":2,"name":"心中梦境","singer":"项斯华","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"花开见佛"},
-    {"id":3,"name":"月满弦","singer":"刘珂矣","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"半壶纱"},
-    {"id":4,"name":"卷珠帘","singer":"段银莹","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"国色天香"}
+    {"id":1,"name":"书香古韵","singer":"戴亚","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"水月空禅心"},
+    {"id":2,"name":"腊八年味","singer":"项斯华","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"花开见佛"},
+    {"id":3,"name":"拼搏生活","singer":"刘珂矣","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"半壶纱"}
 ]
