@@ -43,6 +43,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   data () {
@@ -61,12 +62,13 @@ export default {
       interval: 5000,
       duration: 1000,
       grids:[
-        {type:'书香古韵',img:'/static/images/ashuxiang.jpg',"url":'../list/main?type=1'},
-        {type:'腊八年味',img:'/static/images/alaba.jpg',"url":'../list/main?type=2'},
-        {type:'拼搏生活',img:'/static/images/apinbo.jpg',"url":'../list/main?type=3'}
+        {type:'书香古韵',img:'/static/images/ashuxiang.jpg',url:'../list/main?type=1'},
+        {type:'腊八年味',img:'/static/images/alaba.jpg',url:'../list/main?type=2'},
+        {type:'拼搏生活',img:'/static/images/apinbo.jpg',url:'../list/main?type=3'}
       ]  
     }
   },
+
 
   methods: {
     goList (url) {
@@ -74,8 +76,7 @@ export default {
     },
     goType(type){
         console.log(type)
-        let url = '../list/main?type=' +type
-        mpvue.navigateTo({ url })
+        
     }
   },
 

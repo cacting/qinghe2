@@ -12,26 +12,27 @@
   </div>
 </template>
 
-import card from '@/components/card'
 
 <script>
 export default {
   data () {
     return {                 
         top:[
-            {type:"流行指数榜",img:"/static/images/bliuxing.jpg",song1:"透明",song2:"凌晨两点的北京",song3:"炸山姑娘"},
-            {type:"热歌榜",img:"/static/images/brege.jpg",song1:"下山",song2:"句号",song3:"透明"},
-            {type:"新歌榜",img:"/static/images/bxinge.jpg",song1:"句号",song2:"火红的萨日朗",song3:"透明"},
-            {type:"飙升榜",img:"/static/images/bbiaos.jpg",song1:"一个人挺好",song2:"送亲",song3:"酒醉的蝴蝶"}
+            {type:"流行指数榜",img:"/static/images/bliuxing.jpg",song1:"透明",song2:"凌晨两点的北京",song3:"炸山姑娘",url:'../list/main?type=4'},
+            {type:"热歌榜",img:"/static/images/brege.jpg",song1:"下山",song2:"句号",song3:"透明",url:'../list/main?type=5'},
+            {type:"新歌榜",img:"/static/images/bxinge.jpg",song1:"句号",song2:"火红的萨日朗",song3:"透明",url:'../list/main?type=6'},
+            {type:"飙升榜",img:"/static/images/bbiaos.jpg",song1:"一个人挺好",song2:"送亲",song3:"酒醉的蝴蝶",url:'../list/main?type=7'}
         ]            
     }
   },
 
+
   methods: {
+      goList (url) {
+      mpvue.navigateTo({ url })
+    },
       goType(type){
-          console.log(type)
-          let url = '../list/main?type=' +type
-          mpvue.navigateTo({ url })
+          console.log(type)                  
       }     
   },
 

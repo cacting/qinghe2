@@ -3,7 +3,8 @@
     "pages/index/main",
     "pages/mine/main",
     "pages/list/main",
-    "pages/recommend/main"
+    "pages/list2/main",
+    "pages/recommand/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,7 +25,7 @@
       "selectedIconPath": "static/images/music.png"
     }, {
       "text": "推荐",
-      "pagePath": "pages/recommend/main",
+      "pagePath": "pages/recommand/main",
       "iconPath": "static/images/_search.png",
       "selectedIconPath": "static/images/search.png"
     }, {
@@ -32,18 +33,6 @@
       "pagePath": "pages/mine/main",
       "iconPath": "static/images/_mine.png",
       "selectedIconPath": "static/images/mine.png"
-    }],
-
-    "items": [{
-      "name": "首页",
-      "pagePath": "pages/index/main",
-      "icon": "static/images/_music.png",
-      "activeIcon": "static/images/music.png"
-    }, {
-      "name": "我的",
-      "pagePath": "pages/mine/main",
-      "icon": "static/images/_mine.png",
-      "activeIcon": "static/images/mine.png"
     }],
     "position": "bottom"
   }

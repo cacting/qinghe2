@@ -1,26 +1,28 @@
 <template>
   <div>
-    <i-panel title="歌曲">
+    <i-panel :title="top.name">
       <view>
-        <i-card v-for="item in list" :key="item" i-class="split" :title="item.name" thumb="item.img">
-            <view slot="content">{{item.singer}}</view>
-            <view slot="footer">{{item.time}}</view>
+        <i-card i-class="split" v-for="item in top" :key="item" :extra="item.name" :thumb="item.img">
+            <view slot="content">歌手{{item.singer}}</view>
+            <view slot="footer">专辑{{item.album}}</view>
         </i-card>
       </view>
     </i-panel>
   </div>
 </template>
 
+
 <script>
 export default {
   data () {
     return {
-      list:[]
+      top:[]
     }
   },
+
   onLoad (option){
-    this.list = require('@/data/' + option.type + '.json')
-    console.log(this.list)
+    console.log(option.type)
+    this.top = require('@/data/' + option.type + '.json')    
   },
 
   methods: {
