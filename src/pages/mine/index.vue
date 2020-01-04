@@ -28,8 +28,11 @@ export default {
     changeName (event) {
       this.name = event.mp.detail.detail.value
     },
+    changeState (event) {
+      this.state = event.mp.detail.detail.value
+    },
     handleClick () {
-      if (this.name) {
+      if (this.name && this.state) {
         wx.showToast({
           title: '已新建' + this.name,
           icon: 'success',
