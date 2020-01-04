@@ -15,21 +15,21 @@
     <i-grid>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-          <image src="/static/images/5.png" />
+          <image src="/static/images/ashuxiang.jpg" />
       </i-grid-icon>
       <i-grid-label>书香古韵</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-          <image src="/static/images/6.png" />
+          <image src="/static/images/alaba.jpg" />
       </i-grid-icon>
-      <i-grid-label>拼搏生活</i-grid-label>
+      <i-grid-label>腊八年味</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-          <image src="/static/images/7.png" />
+          <image src="/static/images/apinbo.jpg" />
       </i-grid-icon>
-      <i-grid-label>腊八年味</i-grid-label>
+      <i-grid-label>拼搏生活</i-grid-label>
     </i-grid-item>
     </i-grid>
 
@@ -66,7 +66,7 @@ export default {
       indicatorDots: true,
       autoplay: true,
       interval: 5000,
-      duration: 1000       
+      duration: 1000  
     }
   },
 

@@ -31,7 +31,7 @@ export default {
     handleClick () {
       if (this.name) {
         wx.showToast({
-          title: '新建了' + this.name,
+          title: '已新建' + this.name,
           icon: 'success',
           duration: 2000
         })

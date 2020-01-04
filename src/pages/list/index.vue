@@ -1,9 +1,13 @@
 <template>
   <div>
-      <i-card v-for="item in list" :key="item" i-class="split" :title="item.name" thumb="item.jpg">
-          <view slot="content">{{item.singer}}</view>
-          <view slot="footer">{{item.time}}</view>
-      </i-card>
+    <i-panel title="书香古韵">
+      <view>
+        <i-card v-for="item in list" :key="item" i-class="split" :title="item.name" thumb="item.img">
+            <view slot="content">{{item.singer}}</view>
+            <view slot="footer">{{item.time}}</view>
+        </i-card>
+      </view>
+    </i-panel>
   </div>
 </template>
 
