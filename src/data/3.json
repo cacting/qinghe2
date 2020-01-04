@@ -1,6 +1,6 @@
 [
-    {"name":"歌名1","singer":"歌手1","image":"https://i.loli.net/2017/08/21/599a521472424.jpg","time":"时长1"},
-    {"name":"歌名2","singer":"歌手2","image":"https://i.loli.net/2017/08/21/599a521472424.jpg","time":"时长2"},
-    {"name":"歌名3","singer":"歌手3","image":"https://i.loli.net/2017/08/21/599a521472424.jpg","time":"时长3"},
-    {"name":"歌名4","singer":"歌手4","image":"https://i.loli.net/2017/08/21/599a521472424.jpg","time":"时长4"}
+    {"name":"冒险","singer":"王启","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"嗨皮摁钉"},
+    {"name":"对过去说Goodbye","singer":"李文琦","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"嗨皮摁钉"},
+    {"name":"痛快的活","singer":"绿皮车","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"痛快的活"},
+    {"name":"末班列车","singer":"指人儿","img":"https://i.loli.net/2017/08/21/599a521472424.jpg","album":"重生少年"}
 ]

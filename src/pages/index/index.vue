@@ -12,26 +12,15 @@
         </swiper-item>
       </block>
     </swiper>
-    <i-grid>
-    <i-grid-item i-class="no-border">
-        <i-grid-icon>
-          <image src="/static/images/ashuxiang.jpg" />
-      </i-grid-icon>
-      <i-grid-label>书香古韵</i-grid-label>
-    </i-grid-item>
-    <i-grid-item i-class="no-border">
-        <i-grid-icon>
-          <image src="/static/images/alaba.jpg" />
-      </i-grid-icon>
-      <i-grid-label>腊八年味</i-grid-label>
-    </i-grid-item>
-    <i-grid-item i-class="no-border">
-        <i-grid-icon>
-          <image src="/static/images/apinbo.jpg" />
-      </i-grid-icon>
-      <i-grid-label>拼搏生活</i-grid-label>
-    </i-grid-item>
-    </i-grid>
+
+    <i-grid i-class="no-border">
+      <i-grid-item @click="goList(item.url)" i-class="no-border" v-for="item in grids" :key="item">
+          <i-grid-icon>
+              <image :src="item.img" />
+          </i-grid-icon>
+          <i-grid-label>{{item.type}}</i-grid-label>
+      </i-grid-item>
+  </i-grid>
 
     <i-panel title="猜你喜欢">
         <view style="padding: 10px;">
@@ -59,23 +48,35 @@ export default {
   data () {
     return {        
         imgUrls: [
-        'http://www.canyin88.com/uploads/image/2019/04/16/1555378220872933.jpg',
-        'http://www.canyin88.com/uploads/image/2019/04/15/1555321255843942.jpg',
-        'http://www.canyin88.com/uploads/190415/99ad8154e7332ca96ccb323580b3b8a2_3.jpg'
+        '/static/images/lun1.jpg',
+        '/static/images/lun2.jpg',
+        '/static/images/lun3.jpg',
+        '/static/images/lun4.jpg',
+        '/static/images/lun5.jpg',
+        '/static/images/lun6.jpg',
+        '/static/images/lun7.jpg'
       ],
       indicatorDots: true,
       autoplay: true,
       interval: 5000,
-      duration: 1000  
+      duration: 1000,
+      grids:[
+        {type:'书香古韵',img:'/static/images/ashuxiang.jpg',"url":'../list/main?type=1'},
+        {type:'腊八年味',img:'/static/images/alaba.jpg',"url":'../list/main?type=2'},
+        {type:'拼搏生活',img:'/static/images/apinbo.jpg',"url":'../list/main?type=3'}
+      ]  
     }
   },
 
   methods: {
-      goType(type){
-          console.log(type)
-          let url = '../list/main?type=' +type.title
-          mpvue.navigateTo({ url })
-      }
+    goList (url) {
+      mpvue.navigateTo({ url })
+    },
+    goType(type){
+        console.log(type)
+        let url = '../list/main?type=' +type
+        mpvue.navigateTo({ url })
+    }
   },
 
   created () {

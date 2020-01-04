@@ -12,13 +12,13 @@
   </div>
 </template>
 
+import card from '@/components/card'
+
 <script>
-
-
 export default {
   data () {
     return {                 
-           top:[
+        top:[
             {type:"流行指数榜",img:"/static/images/bliuxing.jpg",song1:"透明",song2:"凌晨两点的北京",song3:"炸山姑娘"},
             {type:"热歌榜",img:"/static/images/brege.jpg",song1:"下山",song2:"句号",song3:"透明"},
             {type:"新歌榜",img:"/static/images/bxinge.jpg",song1:"句号",song2:"火红的萨日朗",song3:"透明"},
@@ -28,12 +28,9 @@ export default {
   },
 
   methods: {
-      goList (url) {
-          mpvue.navigateTo({ url })
-      },
       goType(type){
           console.log(type)
-          let url = '../list/main?type=' +type.title
+          let url = '../list/main?type=' +type
           mpvue.navigateTo({ url })
       }     
   },
