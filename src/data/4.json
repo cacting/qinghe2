@@ -1,6 +1,6 @@
 [
-    {"id":1,"name":"透明","singer":"邓紫棋","img":"/static/images/ashuxiang.jpg","album":"摩天动物园"},
-    {"id":2,"name":"凌晨两点的北京","singer":"谢宇伦","img":"/static/images/ashuxiang.jpg","album":"凌晨两点的北京"},
-    {"id":3,"name":"炸山姑娘","singer":"七音盒","img":"/static/images/ashuxiang.jpg","album":"炸山姑娘"},
-    {"id":4,"name":"聊表心意","singer":"薛之谦","img":"/static/images/ashuxiang.jpg","album":"尘"}
+    {"id":1,"name":"透明","singer":"邓紫棋","img":"/static/images/bliuxing.jpg","album":"摩天动物园"},
+    {"id":2,"name":"凌晨两点的北京","singer":"谢宇伦","img":"/static/images/f2.jpg","album":"凌晨两点的北京"},
+    {"id":3,"name":"炸山姑娘","singer":"七音盒","img":"/static/images/f3.jpg","album":"炸山姑娘"},
+    {"id":4,"name":"聊表心意","singer":"薛之谦","img":"/static/images/f4.jpg","album":"尘"}
 ]

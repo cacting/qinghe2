@@ -1,6 +1,6 @@
 [
-    {"id":1,"name":"下山","singer":"要不要买菜","img":"/static/images/ashuxiang.jpg","album":"下山"},
-    {"id":2,"name":"句号","singer":"邓紫棋","img":"/static/images/ashuxiang.jpg","album":"摩天动物园"},
-    {"id":3,"name":"透明","singer":"邓紫棋","img":"/static/images/ashuxiang.jpg","album":"摩天动物园"},
-    {"id":4,"name":"麻雀","singer":"李荣浩","img":"/static/images/ashuxiang.jpg","album":"麻雀"}
+    {"id":1,"name":"下山","singer":"要不要买菜","img":"/static/images/brege.jpg","album":"下山"},
+    {"id":2,"name":"句号","singer":"邓紫棋","img":"/static/images/bxinge.jpg","album":"摩天动物园"},
+    {"id":3,"name":"透明","singer":"邓紫棋","img":"/static/images/bxinge.jpg","album":"摩天动物园"},
+    {"id":4,"name":"麻雀","singer":"李荣浩","img":"/static/images/maque.jpg","album":"麻雀"}
 ]

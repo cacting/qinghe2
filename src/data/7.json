@@ -1,6 +1,6 @@
 [
-    {"id":1,"name":"下山","singer":"要不要买菜","img":"/static/images/ashuxiang.jpg","album":"下山"},
-    {"id":2,"name":"句号","singer":"邓紫棋","img":"/static/images/ashuxiang.jpg","album":"摩天动物园"},
-    {"id":3,"name":"透明","singer":"邓紫棋","img":"/static/images/ashuxiang.jpg","album":"摩天动物园"},
-    {"id":4,"name":"麻雀","singer":"李荣浩","img":"/static/images/ashuxiang.jpg","album":"麻雀"}
+    {"id":1,"name":"嚣张","singer":"en","img":"/static/images/h1.jpg","album":"嚣张"},
+    {"id":2,"name":"忘情牛肉面","singer":"马建涛","img":"/static/images/h2.jpg","album":"忘情牛肉面"},
+    {"id":3,"name":"逃爱","singer":"于嘉乐","img":"/static/images/h3.jpg","album":"逃爱"},
+    {"id":4,"name":"勇气","singer":"棉子","img":"/static/images/h4.jpg","album":"勇气"}
 ]
