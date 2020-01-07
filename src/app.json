@@ -4,7 +4,7 @@
     "pages/mine/main",
     "pages/list/main",
     "pages/list2/main",
-    "pages/recommand/main"
+    "pages/recommend/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,7 +25,7 @@
       "selectedIconPath": "static/images/music.png"
     }, {
       "text": "推荐",
-      "pagePath": "pages/recommand/main",
+      "pagePath": "pages/recommend/main",
       "iconPath": "static/images/_search.png",
       "selectedIconPath": "static/images/search.png"
     }, {

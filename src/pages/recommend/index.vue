@@ -2,7 +2,7 @@
   <div>
     <i-panel i-class="split1" title="排行榜">
         <view style="padding: 15px;">
-            <i-card @click="goType(item.type)" i-class="split2" v-for="item in top" :key="item" :title="item.type" :thumb="item.img">
+            <i-card @click="goList(item.url)" i-class="split2" v-for="item in top" :key="item" :title="item.type" :thumb="item.img">
                 <view slot="footer">1.{{item.song1}}</view>
                 <view slot="footer">2.{{item.song2}}</view>
                 <view slot="footer">3.{{item.song3}}</view>
@@ -28,12 +28,12 @@ export default {
 
 
   methods: {
-      goList (url) {
+    goList (url) {
       mpvue.navigateTo({ url })
     },
-      goType(type){
-          console.log(type)                  
-      }     
+    goType(type){
+        console.log(type)        
+    }
   },
 
   created () {      
