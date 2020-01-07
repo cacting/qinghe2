@@ -20,7 +20,7 @@
           </i-grid-icon>
           <i-grid-label>{{item.type}}</i-grid-label>
       </i-grid-item>
-  </i-grid>
+    </i-grid>
 
     <i-panel title="猜你喜欢">
         <view style="padding: 10px;">
